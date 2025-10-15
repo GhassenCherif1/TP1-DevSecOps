@@ -1,4 +1,4 @@
-name: DevSecOps Pipeline (Fake Demo)
+name: DevSecOps Pipeline
 
 on:
   push:
