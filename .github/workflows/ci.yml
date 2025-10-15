@@ -42,7 +42,7 @@ jobs:
         run: pip install safety
 
       - name: Run Safety SCA Scan
-        run: safety check --full-report --exit-code 1
+        run: safety check --full-report --exit-code
 
   dast:
     name: DAST Scan
