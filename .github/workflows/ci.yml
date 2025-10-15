@@ -21,6 +21,14 @@ jobs:
 
       - name: Install dependencies
         run: pip install -r requirements.txt
+      - name: Install pytest
+        run: pip install pytest
+
+      - name: Compile check
+        run: python -m py_compile dsvw.py
+
+      - name: Run tests
+        run: pytest -q
   sast-sca:
     name: SAST & SCA Scan
     runs-on: ubuntu-latest
