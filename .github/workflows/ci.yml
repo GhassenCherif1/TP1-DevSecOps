@@ -50,7 +50,7 @@ jobs:
         run: pip install safety
 
       - name: Run Safety SCA Scan
-        run: echo "safety check --full-report" | bash
+        run: echo "safety check --full-report"
 
   dast:
     name: DAST Scan
@@ -78,7 +78,7 @@ jobs:
 
       # ----- Run OWASP ZAP DAST Scan -----
       - name: Run OWASP ZAP Baseline Scan
-        run: echo "OWASP ZAP scan done" | bash
+        run: echo "OWASP ZAP scan done"
 
       # Stop Docker container
       - name: Stop Docker container
